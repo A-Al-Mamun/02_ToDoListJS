@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List | Project </title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: #fff;
+            background: radial-gradient(circle, #fff 0%, rgba(54,132,223,1) 100%);
+        }
+
+
+        .todo-container{
+            background: #ecf0f1;
+            border-radius: 15px;
+            width: 450px;
+            margin: 3rem auto;
+            padding: 1.5rem;
+        }
+        .date-hour{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem 1rem 1.5rem 1rem;
+            font-size: 16px;
+            color: #102F5e;
+        }
+        .date{}
+        .hour{}
+
+        header{
+            padding: 0 1rem 1rem;
+            
+        }
+        header h1{}
+
+        form{}
+        form p{}
+        .form-control{
+            display: flex;
+        }
+        .form-control input{
+            flex: 1;
+            outline: 0;
+            box-shadow: none;
+            border: 1px solid #858585;
+            padding: 0.4rem 0.5rem;
+        }
+        .hide{
+            display: none;
+        }
+        button{
+            background: darkorange;
+            color: #102F5e;
+            border: 2px solid #102F5e;
+            padding: 0.2rem 0.4rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            transition: .4s;
+            border: 1px solid #f5880e;
+        }
+        button:hover{
+            background: orangered;
+            color: #fff;
+        }
+        button > i{
+            font-weight: bold;
+            pointer-events: none;
+        }
+        .form-control button{
+            background: #76df76;
+            border: 0px;
+        }
+
+        .form-control button:hover{
+            background: green;
+        }
+
+        .form-control button i{}
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <div class="date-hour">
+            <div class="date">Date</div>
+            <div class="hour">Hour</div>
+        </div>
+        <header>
+            <h1>To Do List</h1>
+        </header>
+
+        <form action="#">
+            <p>Add Your Task Here</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Type here...">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const data = new Date();
+        const timeElapset = date.now();
+        const today = new Date(timeElapset);
+        document.getElementById("date").innerHTML = today.toDateString();
+    </script>
+</body>
+</html>
